@@ -1,0 +1,144 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://www.nlpli.gr/dcat-lds#",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/application/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "euvoc_auth": "http://publications.europa.eu/resource/authority/",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://lds.eu/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/"
+  },
+  "ms:lrType": {
+    "@id": "ms:mlModel"
+  },
+  "dct:title": [
+    {
+      "@value": "Word2Vec embeddings for English",
+      "@language": "en"
+    }
+  ],
+  "dct:description": [
+    {
+      "@value": "Word2Vec model for English.",
+      "@language": "en"
+    }
+  ],
+  "dcat:version": "1.0",
+  "dcat:keyword": [
+    {
+      "@value": "word embedding",
+      "@language": "en"
+    },
+    {
+      "@value": "Wikipedia",
+      "@language": "en"
+    },
+    {
+      "@value": "English",
+      "@language": "en"
+    }
+  ],
+  "dct:publisher": {
+    "@id": "dcatlds:company-c",
+    "@type": "foaf:Organization",
+    "foaf:name": [
+      {
+        "@value": "Company C",
+        "@language": "en"
+      }
+    ]
+  },
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "ms:size": [
+        {
+          "ms:amount": 1.1,
+          "ms:sizeUnit": {
+            "@id": "ms:gb"
+          }
+        }
+      ],
+      "dcat:byteSize": 1181116006,
+      "dcat:downloadURL": "https://example.com/data.zip",      
+      "dcat:mediaType": [],
+      "dct:format": [
+        {
+          "@id": "omtd:BinaryFormat"
+        }
+      ]
+    }
+  ],
+  "ms:sensitiveDataIncluded": {
+    "@id": "ms:unknownS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "ms:noP"
+  },
+  "ms:anonymized": {
+    "@id": "ms:unknownA"
+  },
+  "ms:mediaType": [
+    {
+      "@id": "ms:text"
+    },
+    {
+      "@id": "ms:textNumerical"
+    }
+  ],
+  "ms:lingualityType": {
+    "@id": "ms:monolingual"
+  },
+  "ms:language": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_en"
+      },
+      "ms:languageTag": "en"
+    }
+  ],
+  "dct:language": [
+    {
+      "@id": "euvoc_auth:language/ENG"
+    }
+  ],
+  "ms:modelFunction": [
+    {
+      "@id": "omtd:FeatureExtraction"
+    }
+  ],
+  "it6:trainedOn": [
+    {
+      "dct:title": [
+        {
+          "@value": "Wikipedia corpus",
+          "@language": "en"
+        }
+      ]
+    }
+  ],
+  "ms:quantized": false,
+  "ms:modelType": {
+    "@id": "ms:embeddings"
+  },
+  "@type": "dcat:Dataset"
+}
