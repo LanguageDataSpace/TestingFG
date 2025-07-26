@@ -156,12 +156,6 @@
   "ms:corpusSubclass": {
     "@id": "ms:annotatedCorpus"
   },
-  "ms:sensitiveDataIncluded": {
-    "@id": "ms:noS"
-  },
-  "ms:personalDataIncluded": {
-    "@id": "ms:noP"
-  },
   "ms:anonymized": {
     "@id": "ms:yesA"
   },
