@@ -93,12 +93,6 @@
       "schema:name": "sampledata.zip"
     }
   ],
-  "ms:sensitiveDataIncluded": {
-    "@id": "ms:noS"
-  },
-  "ms:personalDataIncluded": {
-    "@id": "ms:noP"
-  },
   "ms:anonymized": {
     "@id": "ms:yesA"
   },
