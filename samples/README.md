@@ -3,4 +3,4 @@ This folder contains a set of **sample files** for assets, policies and offers t
 **IMPORTANT NOTES**
 
 - To be valid, the files for assets and offers contain the property "dcat:downloadURL" with a fake location. None of these datasets can be negotiated and transferred. 
-- The LDS connector does not accept duplicate files. If you want to test the import properties, please copy the files, change the names and/or identifiers before attempting to import them.
+- The LDS connector does not accept duplicate files. If you want to test the import properties, please copy the files, change the title (dct:title),  identifier (adms:identifier) and, in the case of policies, the link to the legal text (cc:legalcode) before attempting to import them.
