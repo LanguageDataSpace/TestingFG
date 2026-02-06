@@ -1,0 +1,164 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/application/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "euvoc_auth": "http://publications.europa.eu/resource/authority/",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/"
+  },
+  "ms:lrType": {
+    "@id": "ms:corpus1"
+  },
+  "adms:identifier": [
+    {
+      "@type": "adms:Identifier",
+      "skos:notation": {
+        "@value": "https://doi.org/10.57771/rnyr-fa06a",
+        "@type": "xsd:string"
+      },
+      "adms:schemaAgency": [
+        {
+          "@value": "European Language Grid",
+          "@language": "en"
+        }
+      ]
+    }
+  ],
+  "dct:title": [
+    {
+      "@value": "ABSITA dataset1",
+      "@language": "en"
+    }
+  ],
+  "dct:description": [
+    {
+      "@value": "The ABSITA dataset contains 4,121 reviews written in Italian and collected from the website booking.com. Reviews are annotated according to seven aspects: pulizia (cleanliness), comfort, servizi (amenities), staff, qualita-prezzo (value), wifi (wireless Internet connection) and posizione (location). For each aspect, the polarity (positive, negative) of its mention has been annotated. The positive and negative polarities are annotated independently, thus for each aspect four sentiment classes are possible: positive (positive=1, negative=0), negative (positive=0, negative=1), neutral (positive=0, negative=0), mixed (positive=1, negative=1).The dataset has been created and used in the context of the ABSITA task (http://sag.art.uniroma2.it/absita/), organised as part of EVALITA 2018 (http://www.evalita.it/2018).",
+      "@language": "en"
+    }
+  ],
+  "dcat:version": "1.0.0",
+  "dcat:keyword": [
+    {
+      "@value": "reviews",
+      "@language": "en"
+    },
+    {
+      "@value": "Italian language",
+      "@language": "en"
+    },
+    {
+      "@value": "aspect term",
+      "@language": "en"
+    },
+    {
+      "@value": "aspect-based sentiment analysis",
+      "@language": "en"
+    }
+  ],
+  "dct:publisher": {
+    "@id": "dcatlds:company-a",
+    "@type": "foaf:Organization",
+    "foaf:name": [
+      {
+        "@value": "Company A",
+        "@language": "en"
+      }
+    ]
+  },
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "ms:size": [
+        {
+          "ms:amount": 4121,
+          "ms:sizeUnit": {
+            "@id": "ms:text1"
+          }
+        }
+      ],
+      "dcat:packageFormat": {
+        "@id": "omtd:Zip"
+      },
+      "dcat:byteSize": 422988,
+      "dcat:downloadURL": "https://example.com/data.zip",
+      "dcat:mediaType": [
+        {
+          "@id": "https://www.iana.org/assignments/media-types/text/csv"
+        }
+      ],
+      "dct:format": [
+        {
+          "@id": "omtd:Csv"
+        }
+      ],
+      "schema:name": "NbWQKWey"
+    }
+  ],
+  "ms:isDocumentedBy": [
+    {
+      "@id": "https://language-data-space.eu/entity/af30cd10-766c-49d3-b7c6-24ab32f7df40",
+      "@type": "foaf:Document",
+      "ms:citationText": [
+        {
+          "@value": "Basile, P., Croce, D., Basile, V., & Polignano, M. (2018). Overview of the EVALITA 2018 Aspect-based Sentiment Analysis task (ABSITA). In EVALITA Evaluation of NLP and Speech Tools for Italian (pp. 1-10). CEUR. ISO 690",
+          "@language": "en"
+        }
+      ]
+    }
+  ],
+  "ms:corpusSubclass": {
+    "@id": "ms:annotatedCorpus"
+  },
+  "ms:sensitiveDataIncluded": {
+    "@id": "ms:noS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "ms:noP"
+  },
+  "ms:anonymized": {
+    "@id": "ms:noA"
+  },
+  "ms:mediaType": [
+    {
+      "@id": "ms:text"
+    }
+  ],
+  "ms:lingualityType": {
+    "@id": "ms:monolingual"
+  },
+  "ms:language": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_it"
+      },
+      "ms:languageTag": "it"
+    }
+  ],
+  "dct:language": [
+    {
+      "@id": "euvoc_auth:language/ITA"
+    }
+  ],
+  "@type": "dcat:Dataset"
+}

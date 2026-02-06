@@ -1,0 +1,183 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/application/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "euvoc_auth": "http://publications.europa.eu/resource/authority/",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/"
+  },
+  "ms:lrType": {
+    "@id": "ms:corpus1"
+  },
+  "adms:identifier": [
+    {
+      "@id": "https://language-data-space.eu/entity/eb347793-ad50-4578-bda5-e564e0777297",
+      "@type": "adms:Identifier",
+      "skos:notation": {
+        "@value": "https://doi.org/10.57771/np8f-s474",
+        "@type": "xsd:string"
+      },
+      "adms:schemaAgency": [
+        {
+          "@value": "European Language Grid",
+          "@language": "en"
+        }
+      ]
+    }
+  ],
+  "dct:title": [
+    {
+      "@value": "CRIPCO corpus",
+      "@language": "en"
+    }
+  ],
+  "dct:description": [
+    {
+      "@value": "The Cross-document Italian People Coreference (CRIPCO) corpus created at FBK is a subset of the news stories published by the local newspaper \"L'Adige\" from 1999 to 2006 annotated with information about person cross-document coreference. CRIPCO is composed of 43,328 documents and it was used in the NEws People Search (NePS) task (http://www.evalita.it/2011/tasks/NePS) at EVALITA 2011 (http://www.evalita.it/2011).To this purpose, the corpus was split into a development set and a test set, balanced according to the ambiguity of the Group Names and the fame of the related persons. The CRIPCO release maintains the subdivision into NePS development and test set, in order to allow comparisons with the results obtained in the evaluation campaign.",
+      "@language": "en"
+    }
+  ],
+  "dcat:version": "1.0.0",
+  "dcat:keyword": [
+    {
+      "@value": "coreference",
+      "@language": "en"
+    },
+    {
+      "@value": "coreference resolution",
+      "@language": "en"
+    },
+    {
+      "@value": "Italian language",
+      "@language": "en"
+    },
+    {
+      "@value": "news",
+      "@language": "en"
+    }
+  ],
+  "dct:publisher": {
+    "@id": "dcatlds:company-a",
+    "@type": "foaf:Organization",
+    "foaf:name": [
+      {
+        "@value": "Company A",
+        "@language": "en"
+      }
+    ]
+  },
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "ms:size": [
+        {
+          "ms:amount": 43,
+          "ms:sizeUnit": {
+            "@id": "ms:text1"
+          }
+        }
+      ],
+      "dcat:packageFormat": {
+        "@id": "omtd:Zip"
+      },
+      "dcat:byteSize": 104032854,
+      "dcat:downloadURL": "https://example.com/data.zip",
+      "dcat:mediaType": [
+        {
+          "@id": "https://www.iana.org/assignments/media-types/text/plain"
+        }
+      ],
+      "dct:format": [
+        {
+          "@id": "omtd:Text"
+        }
+      ],
+      "schema:name": "9aAMZlav"
+    }
+  ],
+  "ms:isDocumentedBy": [
+    {
+      "@id": "https://language-data-space.eu/entity/59915117-efcd-4599-882e-bee3ae9300fc",
+      "@type": "foaf:Document",
+      "ms:citationText": [
+        {
+          "@value": "Luisa Bentivogli, Christian Girardi, Emanuele Pianta. \"Creating a Gold Standard for Person Cross-Document Coreference Resolution in Italian News\". In Proceedings of the LREC 2008 Workshop on Resources and Evaluation for Identity Matching, Entity Resolution and Entity Management. Marrakech, Morocco, 31 May 2008.",
+          "@language": "en"
+        }
+      ]
+    },
+    {
+      "@id": "https://language-data-space.eu/entity/cfee7905-b2f3-46bc-90c9-0ae78787c965",
+      "@type": "foaf:Document",
+      "ms:citationText": [
+        {
+          "@value": "Bentivogli L., Marchetti A., Pianta E. (2013) The News People Search Task at EVALITA 2011: Evaluating Cross-Document Coreference Resolution of Named Person Entities in Italian News. In: Magnini B., Cutugno F., Falcone M., Pianta E. (eds) Evaluation of Natural Language and Speech Tools for Italian. EVALITA 2012. Lecture Notes in Computer Science, vol 7689. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-35828-9_14",
+          "@language": "en"
+        }
+      ]
+    }
+  ],
+  "ms:corpusSubclass": {
+    "@id": "ms:annotatedCorpus"
+  },
+  "ms:sensitiveDataIncluded": {
+    "@id": "ms:noS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "ms:noP"
+  },
+  "ms:anonymized": {
+    "@id": "ms:noA"
+  },
+  "ms:annotationType": [
+    {
+      "@id": "omtd:Person"
+    },
+    {
+      "@id": "omtd:Coreference"
+    }
+  ],
+  "ms:mediaType": [
+    {
+      "@id": "ms:text"
+    }
+  ],
+  "ms:lingualityType": {
+    "@id": "ms:monolingual"
+  },
+  "ms:language": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_it"
+      },
+      "ms:languageTag": "it"
+    }
+  ],
+  "dct:language": [
+    {
+      "@id": "euvoc_auth:language/ITA"
+    }
+  ],
+  "@type": "dcat:Dataset"
+}
