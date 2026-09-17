@@ -102,7 +102,10 @@
       "@language": "en"
     }
   ],
-  "dct:publisher": {
+  "dcatlds:generationType": {
+    "@id": "dcatlds:authentic"
+  },
+    "dct:publisher": {
     "@id": "dcatlds:company-a",
     "@type": "foaf:Organization",
     "foaf:name": [
