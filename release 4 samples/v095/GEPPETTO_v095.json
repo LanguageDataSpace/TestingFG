@@ -1,0 +1,276 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/",
+    "eu-country": "http://publications.europa.eu/resource/authority/country/",
+    "eu-continent": "http://publications.europa.eu/resource/authority/continent/",
+    "eu-place": "http://publications.europa.eu/resource/authority/place/",
+    "eu-filetype": "http://publications.europa.eu/resource/authority/file-type/"
+  },
+  "@type": "dcat:Dataset",
+  "dct:title": [
+    {
+      "@language": "en",
+      "@value": "GePpeTto GPT2 Model IT"
+    }
+  ],
+  "dct:conformsTo": [
+    { "@id": "dcatlds:0.9.5" }
+  ],
+
+  "dct:description": [
+    {
+      "@language": "en",
+      "@value": "GEPPETTO (GPT-2 for Italian) is the first generative language model for Italian, based on the GPT-2 architecture. It was trained on a dump of Italian Wikipedia (November 2019), consisting of 2.8GB of text, and on the ItWac corpus (Baroni et al., 2009), which amounts to 11GB of web texts. It represents a mix of standard and less standard Italian, on a rather wide chronological span"
+    },
+    {
+      "@language": "it",
+      "@value": "GEPPETTO è il primo modello generativo per l'italiano basato sull'architettura GPT-2. È stato addestrato su un dump di Wikipedia (November 2019) di 2.8GB di testo, e sul corpus ItWac (Baroni et al., 2009) che ammonta a 11GB di testo. Rappresenta una combinazione di italiano standard e meno standard, su un arco cronologico piuttosto ampio."
+    }
+  ],
+  "dcat:keyword": [
+    {
+      "@language": "en",
+      "@value": "generative model"
+    },
+    {
+      "@language": "en",
+      "@value": "GPT-2"
+    },
+    {
+      "@language": "en",
+      "@value": "Italian language"
+    },
+    {
+      "@language": "it",
+      "@value": "modello generativo"
+    },
+    {
+      "@language": "it",
+      "@value": "lingua italiana"
+    }
+  ],
+  "dcat:version": "1.0.0",
+  "dcatlds:finetuningMethodology": [
+    {
+      "@language": "en",
+      "@value": "none"
+    }
+  ],
+  "ms:anonymized": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownA"
+  },
+  "ms:sensitiveDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownP"
+  },
+
+  "it6:hasInputModality": [
+    {
+      "@type": "it6:Modality",
+      "ms:mediaType": [
+        {
+          "@id": "http://w3id.org/meta-share/meta-share/text"
+        }
+      ]
+    }
+  ],
+  "it6:hasOutputModality": [
+    {
+      "@type": "it6:Modality",
+      "ms:mediaType": [
+        {
+          "@id": "http://w3id.org/meta-share/meta-share/text"
+        }
+      ]
+    }
+  ],
+  "dcatlds:inputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_it"
+      },
+      "ms:script": {
+        "@id": "http://w3id.org/meta-share/bcp47/script_Latn"
+      }
+    }
+  ],
+  "dcatlds:outputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_it"
+      }
+    }
+  ],
+  "dct:creator": [
+    {
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "University of Pisa"
+        },
+        {
+          "@language": "it",
+          "@value": "Università di Pisa"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Lorenzo De Mattei"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Michele Cafagna"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Felice Dell'Orletta"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Malvina Nissim"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Marco Guerini"
+        }
+      ]
+    }
+  ],
+  "dct:modified": {
+    "@type": "xsd:date",
+    "@value": "2020-04-24"
+  },
+  "it6:designSpecifications": [
+    {
+      "@language": "en",
+      "@value": "GEPPETTO is based on the GPT-2 small architecture with 117M parameters. Layers: 12; Hidden Size: 768; Attention Heads: 12"
+    }
+  ],
+  "it6:releaseDate": {
+    "@type": "xsd:date",
+    "@value": "2020-04-24"
+  },
+   "it6:trainedOn": [
+    { "dct:title": [
+        { "@language": "en", "@value": "Italian Wikipedia (November 2019)" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "ItWac corpus" }
+      ]
+    }
+  ],
+  "ms:contextLength": 1024,
+  "ms:lrType": {
+    "@id": "ms:mlModel"
+  },
+  "ms:modelType": {
+    "@id": "http://w3id.org/meta-share/meta-share/decoder_only"
+  },
+    "ms:modelFunction": [
+    {
+      "@id": "http://w3id.org/meta-share/omtd-share/TextGeneration"
+    }
+  ],
+  "it6:intendedUse": [
+    {
+      "@language": "en",
+      "@value": "Language generation"
+    }
+  ],
+  "ms:quantized": false,
+  "dcatlds:modelDistribution": [
+    {
+      "@type": "dcatlds:ModelDistribution",
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "API Distribution"
+        }
+      ],
+      "dcatlds:accessLevel": [
+        {
+          "@language": "en",
+          "@value": "Black-box access"
+        }
+      ],
+      "dcatlds:distributionMethod": [
+        {
+          "@language": "en",
+          "@value": "Subscription-based REST API"
+        }
+      ],
+      "dcatlds:amountOfActiveParameters": 7000000000,
+      "dcatlds:tokensPerParameter": 4,
+      "ms:accessLocation": {
+        "@type": "xsd:anyURI",
+        "@value": "https://huggingface.co/LorenzoDeMattei/GePpeTto"
+      },
+      "ms:size": [
+        {
+          "ms:amount": 13.5,
+          "ms:sizeUnit": {
+            "@id": "http://w3id.org/meta-share/meta-share/gb"
+          }
+        }
+      ],
+      "dcatlds:format": [
+        {
+          "@id": "omtd:ONNX"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/",
+    "eu-country": "http://publications.europa.eu/resource/authority/country/",
+    "eu-continent": "http://publications.europa.eu/resource/authority/continent/",
+    "eu-place": "http://publications.europa.eu/resource/authority/place/",
+    "eu-filetype": "http://publications.europa.eu/resource/authority/file-type/"
+  },
+
+  "@type": "dcat:Dataset",
+  "adms:identifier": [
+    {
+      "@type": "adms:Identifier",
+      "adms:schemaAgency": [
+        { "@language": "en", "@value": "Hugging Face" }
+      ],
+      "skos:notation": {
+        "@type": "xsd:string",
+        "@value": "cjvt/GaMS3-12B-Instruct"
+      }
+    }
+  ],
+  "dct:title": [
+    { "@language": "en", "@value": "GaMS3-12B-Instruct" },
+    { "@language": "sl", "@value": "GaMS3-12B-Instruct" }
+  ],
+  "dcat:version": "1.0",
+  "dct:description": [
+    { "@language": "en", "@value": "GaMS3-12B-Instruct represents the next generation of the GaMS (Generative Model for Slovene) model. The model is based on Google's Gemma 3 family and continually pretrained on Slovene, English, and some portion of Croatian, Serbian, and Bosnian corpora. The supervised fine-tuning phase was done on a combination of Slovene and English datasets." },
+    { "@language": "sl", "@value": "GaMS3-12B-Instruct predstavlja naslednjo generacijo modela GaMS (Generativni model za slovenščino). Model temelji na družini Google Gemma 3 in je bil kontinuirano vnaprej naučen na slovenskih, angleških ter deloma hrvaških, srbskih in bosanskih korpusih. Faza nadzorovanega finega uglasbevanja je bila izvedena na kombinaciji slovenskih in angleških naborov podatkov." }
+  ],
+  "dcat:keyword": [
+    { "@language": "en", "@value": "Gemma3" },
+    { "@language": "en", "@value": "LLM" },
+    { "@language": "en", "@value": "language-specific" },
+    { "@language": "en", "@value": "Slovene" }
+  ],
+  "dcatlds:inputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_sl" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_en" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_hr" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_sr" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_bs" }
+    }
+  ],
+  "dcatlds:outputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_sl" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_en" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_hr" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_sr" }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "http://w3id.org/meta-share/bcp47/language_bs" }
+    }
+  ],
+  "dct:conformsTo": [
+    { "@id": "dcatlds:0.9.5" }
+  ],
+  "dct:creator": [
+    {
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        { "@language": "en", "@value": "Centre for Language Resources and Technologies at the University of Ljubljana" },
+        { "@language": "sl", "@value": "Center za jezikovne vire in tehnologije Univerze v Ljubljani" }
+      ],
+      "adms:identifier": [
+        {
+          "@type": "adms:Identifier",
+          "adms:schemaAgency": [
+            { "@language": "en", "@value": "URL" }
+          ],
+          "skos:notation": {
+            "@type": "xsd:string",
+            "@value": "https://www.cjvt.si/"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        { "@language": "en", "@value": "Domen Vreš" }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        { "@language": "en", "@value": "Iztok Lebar Bajec" }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        { "@language": "en", "@value": "Tjaša Arčon" }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        { "@language": "en", "@value": "Timotej Petrič" }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        { "@language": "en", "@value": "Dario Vajda" }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        { "@language": "en", "@value": "Marko Robnik Šikonja" }
+      ]
+    }
+  ],
+  "dct:publisher": {
+    "@type": "foaf:Organization",
+    "foaf:name": [
+      { "@language": "en", "@value": "Centre for Language Resources and Technologies at the University of Ljubljana" },
+      { "@language": "sl", "@value": "Center za jezikovne vire in tehnologije Univerze v Ljubljani" }
+    ],
+    "adms:identifier": [
+      {
+        "@type": "adms:Identifier",
+        "adms:schemaAgency": [
+          { "@language": "en", "@value": "URL" }
+        ],
+        "skos:notation": {
+          "@type": "xsd:string",
+          "@value": "https://www.cjvt.si/"
+        }
+      }
+    ]
+  },
+  "ms:parameterPrecision": "BFloat16",
+  "ms:quantized": false,
+  "dct:modified": {
+      "@type": "xsd:date",
+      "@value": "2025-12-04"
+  },
+  "dcatlds:baseModel": {
+    "dct:title": [
+        { "@language": "en", "@value": "DGT" }
+      ]
+    },    
+  "it6:hasInputModality": [
+    {
+      "@type": "ms:Modality",
+      "ms:mediaType": [
+        { "@id": "http://w3id.org/meta-share/meta-share/text" }
+      ]
+    }
+  ],
+  "it6:hasOutputModality": [
+    {
+      "ms:mediaType": [
+        { "@id": "http://w3id.org/meta-share/meta-share/text" }
+      ]
+    }
+  ],
+  "dcatlds:finetuningMethodology": [
+    { "@language": "en", "@value": "Supervised Fine-Tuning (SFT) on a combination of Slovene and English instruction-following, conversational, and safety datasets." }
+  ],
+  "it6:intendedUse": [
+    {
+      "@language": "en",
+      "@value": "Designed for instruction-following and multi-turn conversational chat, with a particular focus on Slovene and other South Slavic languages. Effective for question answering, text generation, summarization, and general-purpose language tasks in Slovene and English."
+    }
+  ],
+  "it6:limitations": [
+    {
+      "@language": "en",
+      "@value": "Performance may be reduced in low-resource South Slavic languages (Croatian, Serbian, Bosnian) compared to Slovene and English, which received the most training data. As a 12B parameter model fine-tuned primarily on public and synthetic datasets, it may produce hallucinations or biased outputs. Use is subject to the Gemma License terms set by Google."
+    }
+  ],
+  "ms:anonymized": {
+    "@id": "http://w3id.org/meta-share/meta-share/yesA"
+  },
+  "ms:lrType": {
+    "@id": "http://w3id.org/meta-share/meta-share/mlModel"
+  },
+  "dcatlds:evaluation": [
+  {
+    "@type": "dcatlds:Evaluation",
+                        "it6:hasBenchmark": [
+                            {
+                                "@type": "it6:Benchmark",
+                                "dct:title": [
+                                    {
+                                        "@value": "ARC Challenge",
+                                        "@language": "en"
+                                    }
+                                ],
+                                "dct:description": [
+                                    {
+                                        "@value": "ARC Challenge description",
+                                        "@language": "en"
+                                    }
+                                ]
+                            }
+                          ],
+  "dcatlds:evaluationOutput": [
+    { "@language": "en", "@value": "acc: 0.5265" }
+  ]
+  }
+  ],
+  "ms:modelType": {
+    "@id": "http://w3id.org/meta-share/meta-share/transformer1"
+  },
+  "ms:modelFunction": {
+    "@id": "http://w3id.org/meta-share/omtd-share/TextGeneration"
+  },
+  "ms:domain": [
+    { "@id": "http://w3id.org/meta-share/meta-share/unspecified" }
+  ],
+  "it6:trainingMethodologies": [
+    {
+      "@language": "en",
+      "@value": "Continual Pretraining: The Gemma 3 base model was continually pretrained on large multilingual corpora covering Slovene, English, Croatian, Serbian, and Bosnian, including web, encyclopedic, legal, academic, OCR-ed historical texts, and synthetic data. Supervised Fine-Tuning (SFT): The continually pretrained model was instruction-tuned on a curated mix of Slovene and English datasets covering question answering, writing, code, chat, and safety prompts."
+    }
+  ],
+  "it6:trainingProcess": [
+    {
+      "@language": "en",
+      "@value": "The model was initialized from Google's Gemma 3 12B pretrained weights and subjected to continual pretraining on Slovene-centric and multilingual corpora from sources including Wikipedia, FineWeb-2, FinePDFS, CLARIN.SI resources (KAS, MaCoCu, Trendi, MetaFida), Nemotron pretraining datasets, and digitised collections from the National and University Library of Slovenia. Following continual pretraining, supervised fine-tuning was performed using proprietary and project-internal datasets developed within the GaMS and PoVeJMo projects, as well as high-quality English synthetic datasets from NVIDIA Nemotron."
+    }
+  ],
+  "it6:bias": [
+    { "@language": "en", "@value": "Primarily trained and instruction-tuned on Slovene and English data; performance may be lower for Croatian, Serbian, and Bosnian, which were included in smaller proportions. May reflect biases present in web-scale and publicly available training corpora, including cultural, social, and demographic biases." }
+  ],
+  "it6:designSpecifications": [
+    { "@language": "en", "@value": "12-billion-parameter transformer-based decoder-only large language model based on the Gemma 3 architecture, optimized for instruction following in Slovene and English. Multilingual by design, covering Slovene, English, Croatian, Serbian, and Bosnian, with a distribution size of 23.6 GB." }
+  ],
+   "it6:trainedOn": [
+    { "dct:title": [
+        { "@language": "en", "@value": "DGT" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "MaCoCu" }
+      ],
+    "adms:identifier": [
+      {
+      "@type": "adms:Identifier",
+      "adms:schemaAgency": [
+        { "@language": "en", "@value": "URL" }
+      ],
+      "skos:notation": {
+        "@type": "xsd:string",
+        "@value": "https://www.clarin.si/repository/xmlui/handle/11356/1813"
+      }
+    }
+    ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "KAS" }
+      ],
+    "adms:identifier": [
+      {
+      "@type": "adms:Identifier",
+      "adms:schemaAgency": [
+        { "@language": "en", "@value": "URL" }
+      ],
+      "skos:notation": {
+        "@type": "xsd:string",
+        "@value": "https://www.clarin.si/repository/xmlui/handle/11356/1449"
+      }
+    }
+    ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "Wikipedia" }
+      ]
+    }
+  ],
+  "dcatlds:modelDistribution": [
+    {
+      "@type": "dcatlds:ModelDistribution",
+      "ms:size": [
+        {
+          "ms:amount": 23.6,
+          "ms:sizeUnit": {
+            "@id": "ms:gb"
+          }
+        }
+      ],
+      "dcatlds:accessLevel": [
+        {
+          "@language": "en",
+          "@value": "Unknown"
+        }
+      ],
+      "dcatlds:distributionMethod": [
+        {
+          "@language": "en",
+          "@value": "Unknown"
+        }
+      ],
+      "dcat:byteSize": 23600000000,
+      "ms:accessLocation": 
+        { 
+          "@type": "xsd:anyURI", 
+          "@value": "https://huggingface.co/cjvt/GaMS3-12B-Instruct" 
+      },
+      "dcatlds:mediaType": [
+        { "@id": "iana:octet-stream" }
+      ],
+      "dcatlds:format": [
+        { "@id": "http://publications.europa.eu/resource/authority/file-type/BIN" }
+      ]
+    }
+  ],
+  "ms:requiresSoftware": [
+    { "@language": "en", "@value": "Requires a compatible inference framework such as Hugging Face Transformers for loading and serving the model." }
+  ]
+}

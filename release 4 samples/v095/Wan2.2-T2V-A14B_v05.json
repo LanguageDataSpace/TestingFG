@@ -1,0 +1,216 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/",
+    "eu-country": "http://publications.europa.eu/resource/authority/country/",
+    "eu-continent": "http://publications.europa.eu/resource/authority/continent/",
+    "eu-place": "http://publications.europa.eu/resource/authority/place/",
+    "eu-filetype": "http://publications.europa.eu/resource/authority/file-type/"
+  },
+  "@type": "dcat:Dataset",
+  "adms:identifier": [
+    {
+      "@type": "adms:Identifier",
+      "adms:schemaAgency": [
+        { "@language": "en", "@value": "Hugging Face" }
+      ],
+      "skos:notation": {
+        "@type": "xsd:string",
+        "@value": "Wan-AI/Wan2.2-T2V-A14B"
+      }
+    }
+  ],
+  "dct:title": [
+    { "@language": "en", "@value": "Wan2.2 Text-to-Video A14B" }
+  ],
+  "dct:alternative": [
+   { "@language": "en", "@value": "Wan2.2 T2V A14B" }
+ ],
+  "dcat:version": "2.2",
+  "dct:description": [
+    {
+      "@language": "en",
+      "@value": "Wan2.2-T2V-A14B is a large-scale text-to-video generative model that uses a Mixture-of-Experts (MoE) diffusion architecture to produce short video clips from text prompts. The model is trained on extensive aesthetic and motion-rich video datasets and supports generation at 480P and 720P resolution with consistent motion and cinematic stylization."
+    }
+  ],
+  "dct:conformsTo": [
+    { "@id": "dcatlds:0.9.5" }
+  ],
+  "dcat:keyword": [
+    { "@language": "en", "@value": "text-to-video" },
+    { "@language": "en", "@value": "diffusion" },
+    { "@language": "en", "@value": "Mixture-of-Experts" },
+    { "@language": "en", "@value": "video synthesis" }
+  ],
+  "dcatlds:inputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": { "@id": "bcp47:language_en" }
+    }
+  ],
+  "dct:creator": [
+   {
+     "@type": "foaf:Organization",
+     "foaf:name": [
+       { "@language": "en", "@value": "Wan AI" }
+     ]
+   }
+ ],
+  "ms:parameterPrecision": "FP8",
+  "ms:quantized": false,
+  "dct:modified": {
+    "@type": "xsd:date",
+    "@value": "2025-07-28"
+  },
+  "it6:releaseDate": {
+    "@type": "xsd:date",
+    "@value": "2025-07-28"
+  },
+  "it6:hasInputModality": [
+      {
+        "@type": "it6:Modality",
+        "ms:mediaType": [
+          { "@id": "http://w3id.org/meta-share/meta-share/text" }
+        ]
+      }
+  ],
+  "it6:hasOutputModality": [
+      {
+        "@type": "it6:Modality",
+        "ms:mediaType": [
+          { "@id": "http://w3id.org/meta-share/meta-share/video" }
+        ]
+      }
+  ],
+  "dcatlds:finetuningMethodology": [
+    {
+      "@language": "en",
+      "@value": "No separate downstream fine-tuning stage is publicly documented. The model was trained end-to-end using large-scale paired text-video datasets with a diffusion-based denoising objective."
+    }
+  ],
+  "dcatlds:instructions": [
+    {
+      "@language": "en",
+      "@value": "Provide a natural language text prompt describing the desired video scene. Prompts should clearly specify subjects, actions, environment, camera style, lighting, and motion characteristics to improve generation quality. Run inference using a PyTorch-based pipeline. Configure generation parameters such as number of frames, resolution (e.g., 480p or 720p), number of diffusion steps, and guidance scale to control motion consistency and visual fidelity."
+    }
+  ],
+  "it6:intendedUse": [
+    {
+      "@language": "en",
+      "@value": "Intended for generating short video clips from natural language descriptions for creative content production, rapid visual prototyping, and multimodal generative AI research. Suitable for applications in digital media creation, advertising concept development, educational demonstrations, and experimentation with text-conditioned video synthesis systems."
+    }
+  ],
+  "it6:limitations": [
+    {
+      "@language": "en",
+      "@value": "Generated videos may contain visual artifacts, motion inconsistencies, unrealistic physical dynamics, or temporal instability, particularly for complex or highly detailed prompts. The model reflects biases present in large-scale web video-text training datasets and may underrepresent certain cultures, demographics, or non-English contexts. It may also generate unsafe or inappropriate visual content if prompted accordingly."
+    }
+  ],
+   "it6:trainedOn": [
+    { "dct:title": [
+        { "@language": "en", "@value": "Wan2.2 traing data" }
+      ]
+    }
+  ],
+  "ms:anonymized": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownA"
+  },
+  "ms:sensitiveDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownP"
+  },
+  "ms:lrType": {
+    "@id": "http://w3id.org/meta-share/meta-share/mlModel"
+  },
+  "ms:modelType": {
+   "@id": "http://w3id.org/meta-share/meta-share/transformer1"
+  },
+  "ms:modelFunction": [
+    { "@id": "omtd:TextToVideoGeneration" },
+    { "@id": "omtd:VideoGeneration" }
+  ],
+  "ms:domain": [
+    { "@id": "http://w3id.org/meta-share/meta-share/ScientificResearchDesignAndEngineering" }
+  ],
+  "it6:trainingMethodologies": [
+    {
+      "@language": "en",
+      "@value": "Pretrained using diffusion-based text-to-video generative objectives on large-scale paired text-video datasets, leveraging a frozen text encoder to condition the video generation. Model fine-tuned using supervised learning on curated text-to-video pairs to improve temporal consistency, visual fidelity, and alignment between prompts and generated frames."
+    }
+  ],
+  "it6:trainingProcess": [
+    {
+      "@language": "en",
+      "@value": "The model is built on a latent diffusion framework. Text prompts are encoded, then projected into a latent video space, followed by iterative denoising steps to generate sequences of video frames. Training involved optimizing a combination of reconstruction and CLIP-based alignment losses to improve semantic alignment between text prompts and generated videos, with regularization to stabilize temporal consistency across frames."
+    }
+  ],
+  "it6:bias": [
+    {
+      "@language": "en",
+      "@value": "Trained on large web-scale text-video datasets, which may contain cultural, demographic, or stereotypical biases reflected in generated videos."
+    }
+  ],
+  "it6:designSpecifications": [
+    {
+      "@language": "en",
+      "@value": "Latent diffusion architecture incorporating Mixture-of-Experts (MoE) blocks for scalable capacity."
+    }
+  ],
+    "dcatlds:modelDistribution": [
+    {
+      "@type": "dcatlds:ModelDistribution",
+      "dct:title": [
+        { "@language": "en", "@value": "API Distribution" }
+      ],
+      "dcatlds:accessLevel": [
+        { "@language": "en", "@value": "Black-box access" }
+      ],
+      "dcatlds:distributionMethod": [
+        { "@language": "en", "@value": "Subscription-based REST API" }
+      ],
+      "dcatlds:amountOfActiveParameters": 7000000000,
+      "dcatlds:tokensPerParameter": 4,
+      "ms:accessLocation": {
+        "@type": "xsd:anyURI",
+        "@value": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B"
+      },
+      "ms:size": [
+        {
+          "ms:amount": 13.5,
+          "ms:sizeUnit": {
+            "@id": "http://w3id.org/meta-share/meta-share/gb"
+          }
+        }
+      ],
+      "dcatlds:format": [
+        {
+          "@id": "omtd:ONNX"
+        }
+      ]
+    }
+  ]
+}

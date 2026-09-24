@@ -1,0 +1,394 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/",
+    "eu-country": "http://publications.europa.eu/resource/authority/country/",
+    "eu-continent": "http://publications.europa.eu/resource/authority/continent/",
+    "eu-place": "http://publications.europa.eu/resource/authority/place/",
+    "eu-filetype": "http://publications.europa.eu/resource/authority/file-type/"
+  },
+  "@type": "dcat:Dataset",
+  "dct:title": [
+    {
+      "@language": "en",
+      "@value": "Minerva-7B-base-v1.0"
+    }
+  ],
+  "dct:conformsTo": [
+    { "@id": "dcatlds:0.9.5" }
+  ],
+  "dct:description": [
+    {
+      "@language": "en",
+      "@value": "Minerva is the first family of LLMs pretrained from scratch on Italian developed by Sapienza NLP in collaboration with Future Artificial Intelligence Research (FAIR)and CINECA. Notably, the Minerva models are truly-open (data and model) Italian-English LLMs, with approximately half of the pretraining data including Italian text. This is the model card for Minerva-7B-base-v1.0, a 7 billion parameter model trained on almost 2.5 trillion tokens (1.14 trillion in Italian, 1.14 trillion in English, and 200 billion in code)."
+    },
+    {
+      "@language": "fr",
+      "@value": "Minerva est la première famille de LLM (Large Language Models) pré-entraînés du debut en italien et anglais, développée par Sapienza NLP en collaboration avec Future Artificial Intelligence Research (FAIR) et le CINECA. Notamment, les modèles Minerva sont des LLM italien-anglais véritablement ouverts (données et modèle), dont environ la moitié des données de pré-entraînement inclut du texte italien. Ce-ci est la fiche technique de Minerva-7B-base-v1.0, un modèle de 7 milliards de paramètres entraîné sur près de 2500 milliards de tokens (1140 milliards en italien, 1140 milliards en anglais et 200 milliards en code)."
+    },
+    {
+      "@language": "it",
+      "@value": "Minerva è la prima famiglia di LLM (Large Language Models) preaddestrati da zero in italiano, sviluppata da Sapienza NLP in collaborazione con Future Artificial Intelligence Research (FAIR) e CINECA. I modelli Minerva sono una famiglia di LLMs bilingui, italiano-inglese, totalmente aperti (dati e modelli), con circa metà dei dati di preaddestramento composti da testo in italiano. Questa è la scheda tecnica di Minerva-7B-base-v1.0, un modello da 7 miliardi di parametri addestrato su quasi 2.500 miliardi di token (1.140 miliardi in italiano, 1.140 miliardi in inglese e 200 miliardi di codice)."
+    }
+  ],
+  "dcat:keyword": [
+    {
+      "@language": "en",
+      "@value": "pretrained model"
+    },
+    {
+      "@language": "en",
+      "@value": "foundational model"
+    },
+    {
+      "@language": "en",
+      "@value": "Italian LLM"
+    },
+    {
+      "@language": "it",
+      "@value": "modello preaddestrato"
+    },
+    {
+      "@language": "it",
+      "@value": "LLM italiano"
+    }
+  ],
+  "dcat:version": "1.0.0",
+  "dcatlds:finetuningMethodology": [
+    {
+      "@language": "en",
+      "@value": "Not applicable"
+    }
+  ],
+  "dcatlds:instructions": [
+    {
+      "@language": "en",
+      "@value": "Use Minerva with HuggingFace transformers. https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0"
+    }
+  ],
+  "it6:hasInputModality": [
+    {
+      "@type": "it6:Modality",
+      "ms:mediaType": [
+        {
+          "@id": "http://w3id.org/meta-share/meta-share/text"
+        }
+      ]
+    }
+  ],
+  "it6:hasOutputModality": [
+    {
+      "@type": "it6:Modality",
+      "ms:mediaType": [
+        {
+          "@id": "http://w3id.org/meta-share/meta-share/video"
+        }
+      ]
+    }
+  ],
+  "dcatlds:inputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "bcp47:language_en"
+      }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_it"
+      }
+    }
+  ],
+  "dcatlds:outputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_en"
+      }
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_it"
+      }
+    }
+  ],
+  "dct:creator": [
+    {
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Sapienza NLP"
+        },
+        {
+          "@language": "it",
+          "@value": "Sapienza NLP"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Riccardo Orlando"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "fr",
+          "@value": "Pere-Lluis Huguet Cabot"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Luca Moroni"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Simone Conia"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Edoardo Barba"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "it",
+          "@value": "Roberto Navigli"
+        }
+      ]
+    }
+  ],
+  "dct:modified": {
+    "@type": "xsd:date",
+    "@value": "2024-12-04"
+  },
+  "it6:bias": [
+    {
+      "@language": "en",
+      "@value": "The Model may: Overrepresent some viewpoints and underrepresent others; Contain stereotypes; Contain personal information; Generate: Racist and sexist content; Hateful, abusive, or violent language; Discriminatory or prejudicial language."
+    }
+  ],
+  "it6:designSpecifications": [
+    {
+      "@language": "en",
+      "@value": "Minerva-7B-base-v1.0 is a transformer model based on the Mistral architecture. Tokens: 2.48T (1.14T it + 1.14T en + 200B code); Layers: 32; Hidden Size: 4096; Attention Heads: 32; Sliding Window: none. Token fertility: 1.32 (on CulturaX), 1.56 (on Wikipedia)"
+    }
+  ],
+  "dcatlds:evaluation": [
+  {
+    "@type": "dcatlds:Evaluation",
+  "it6:hasBenchmark": [
+    {
+      "@type": "it6:Benchmark",
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "ITA-Bench"
+        }
+      ]
+    }
+  ],
+    "dcatlds:evaluationOutput": [
+    { "@language": "en", "@value": "unknown" }
+  ]
+  }
+  ],
+  "it6:intendedUse": [
+    {
+      "@language": "en",
+      "@value": "Language generation"
+    }
+  ],
+  "it6:limitations": [
+    {
+      "@language": "en",
+      "@value": "The model may: Generate content that may not be appropriate for all settings, including sexual content; Make errors, including producing incorrect information or historical facts as if it were factual; Generate irrelevant or repetitive outputs"
+    }
+  ],
+  "it6:releaseDate": {
+    "@type": "xsd:date",
+    "@value": "2024-05-26"
+  },
+   "it6:trainedOn": [
+    { "dct:title": [
+        { "@language": "en", "@value": "RedPajama-Data-V2" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "CulturaX" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "Gutenberg/Wikisource" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "Wikipedia" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "Gazzetta Ufficiale" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "FineWeb" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "ArXiv" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "Gutenberg" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "StackExchange" }
+      ]
+    },
+    { "dct:title": [
+        { "@language": "en", "@value": "The Stack V2" }
+      ]
+    }
+  ],
+
+  "it6:trainingMethodologies": [
+    {
+      "@language": "en",
+      "@value": "Trained from scratch on raw, unstructured data from curated sources. "
+    }
+  ],
+  "it6:trainingProcess": [
+    {
+      "@language": "en",
+      "@value": "Trained on CINECA's Leonardo Supercomputer using 128 GPUs at the same time"
+    }
+  ],
+  "ms:anonymizationDetails": [
+    {
+      "@language": "en",
+      "@value": "Unspecified"
+    }
+  ],
+  "ms:anonymized": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownA"
+  },
+  "ms:contextLength": 4096,
+  "ms:lrType": {
+    "@id": "http://w3id.org/meta-share/meta-share/mlModel"
+  },
+  "ms:modelFunction": [
+    {
+      "@id": "http://w3id.org/meta-share/omtd-share/NaturalLanguageGeneration"
+    },
+    {
+      "@id": "http://w3id.org/meta-share/omtd-share/NaturalLanguageUnderstanding"
+    }
+  ],
+  "ms:modelType": {
+    "@id": "http://w3id.org/meta-share/meta-share/decoder_only"
+  },
+  "ms:parameterPrecision": "BFloat16",
+  "ms:personalDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownP"
+  },
+  "ms:quantized": false,
+  "ms:requiresSoftware": [
+    {
+      "@language": "en",
+      "@value": "transformers; torch; flash-attn; CUDA tookit"
+    }
+  ],
+  "ms:sensitiveDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownS"
+  },
+  "dcatlds:modelDistribution": [
+    {
+      "@type": "dcatlds:ModelDistribution",
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "API Distribution"
+        }
+      ],
+      "dcatlds:accessLevel": [
+        {
+          "@language": "en",
+          "@value": "Black-box access"
+        }
+      ],
+      "dcatlds:distributionMethod": [
+        {
+          "@language": "en",
+          "@value": "Subscription-based REST API"
+        }
+      ],
+      "dcatlds:amountOfActiveParameters": 7000000000,
+      "dcatlds:tokensPerParameter": 4,
+      "ms:accessLocation": {
+        "@type": "xsd:anyURI",
+        "@value": "https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0"
+      },
+      "ms:size": [
+        {
+          "ms:amount": 13.5,
+          "ms:sizeUnit": {
+            "@id": "http://w3id.org/meta-share/meta-share/gb"
+          }
+        }
+      ],
+      "dcatlds:format": [
+        {
+          "@id": "omtd:ONNX"
+        }
+      ]
+    }
+  ]
+}

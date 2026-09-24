@@ -1,0 +1,500 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://language-data-space.eu/entity/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/",
+    "eu-country": "http://publications.europa.eu/resource/authority/country/",
+    "eu-continent": "http://publications.europa.eu/resource/authority/continent/",
+    "eu-place": "http://publications.europa.eu/resource/authority/place/",
+    "eu-filetype": "http://publications.europa.eu/resource/authority/file-type/"
+  },
+  "@type": "dcat:Dataset",
+  "dct:title": [
+    {
+      "@language": "en",
+      "@value": "Mistral-7B-Instruct"
+    }
+  ],
+  "dct:alternative": [
+    {
+      "@language": "en",
+      "@value": "Mistral 7B v0.2 Instruct"
+    }
+  ],
+  "dct:conformsTo": [
+    { "@id": "dcatlds:0.9.5" }
+  ],
+  "dcat:version": "v0.2",
+  "dct:description": [
+    {
+      "@language": "en",
+      "@value": "Mistral-7B-Instruct-v0.2 is an instruct fine-tuned version of the Mistral-7B-v0.2 base model. It is a 7.3 billion parameter transformer model that outperforms many larger models like Llama 2 13B. This version supports a 32,768 token context window and features Grouped-query attention (GQA) for faster inference."
+    }
+  ],
+  "dcat:keyword": [
+    {
+      "@language": "en",
+      "@value": "instruction-tuning"
+    },
+    {
+      "@language": "en",
+      "@value": "transformer"
+    },
+    {
+      "@language": "en",
+      "@value": "gqa"
+    }
+  ],
+  "dcatlds:inputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "bcp47:language_en"
+      }
+    }
+  ],
+  "dcatlds:outputLanguage": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "bcp47:language_en"
+      }
+    }
+  ],
+  "dct:creator": [
+    {
+      "@type": "foaf:Organization",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Mistral AI"
+        }
+      ],
+      "adms:identifier": [
+        {
+          "@type": "adms:Identifier",
+          "adms:schemaAgency": [
+            {
+              "@language": "en",
+              "@value": "ROR"
+            }
+          ],
+          "skos:notation": {
+            "@type": "xsd:string",
+            "@value": "https://ror.org/05w9p7918"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Albert Q. Jiang"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Alexandre Sablayrolles"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Arthur Mensch"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Chris Bamford"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Devendra Singh Chaplot"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Diego de las Casas"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Florian Bressand"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Gianna Lengyel"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Guillaume Lample"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Lucile Saulnier"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Lélio Renard Lavaud"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Marie-Anne Lachaux"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Pierre Stock"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Teven Le Scao"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Thibaut Lavril"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Thomas Wang"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "Timothée Lacroix"
+        }
+      ]
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": [
+        {
+          "@language": "en",
+          "@value": "William El Sayed"
+        }
+      ]
+    }
+  ],
+  "dct:publisher": {
+    "@type": "foaf:Organization",
+    "foaf:name": [
+      {
+        "@language": "en",
+        "@value": "Mistral AI"
+      }
+    ],
+    "adms:identifier": [
+      {
+        "@type": "adms:Identifier",
+        "adms:schemaAgency": [
+          {
+            "@language": "en",
+            "@value": "ROR"
+          }
+        ],
+        "skos:notation": {
+          "@type": "xsd:string",
+          "@value": "https://ror.org/05w9p7918"
+        }
+      }
+    ]
+  },
+  "ms:parameterPrecision": "BFloat16",
+  "ms:quantized": false,
+  "dct:modified": {
+    "@type": "xsd:date",
+    "@value": "2023-12-28"
+  },
+  "it6:releaseDate": {
+    "@type": "xsd:date",
+    "@value": "2023-12-28"
+  },
+  "it6:hasInputModality": [
+    {
+      "@type": "it6:Modality",
+      "ms:mediaType": [
+        {
+          "@id": "http://w3id.org/meta-share/meta-share/text"
+        }
+      ]
+    }
+  ],
+  "it6:hasOutputModality": [
+    {
+      "@type": "it6:Modality",
+      "ms:mediaType": [
+        {
+          "@id": "http://w3id.org/meta-share/meta-share/text"
+        }
+      ]
+    }
+  ],
+  "dcatlds:finetuningMethodology": [
+    {
+      "@language": "en",
+      "@value": "Supervised Fine-Tuning (SFT) on public instruction datasets and conversational data."
+    }
+  ],
+  "dcatlds:instructions": [
+    {
+      "@language": "en",
+      "@value": "To use this instruct-tuned model, prompts must be wrapped in [INST] and [/INST] tokens. The first instruction should be preceded by a start-of-sentence token <s>. The model supports a context window of up to 32,768 tokens. For multi-turn conversations, the format should follow: <s>[INST] Instruction 1 [/INST] Model Answer 1</s>[INST] Instruction 2 [/INST]."
+    }
+  ],
+  "it6:intendedUse": [
+    {
+      "@language": "en",
+      "@value": "Designed for instruction-following, multi-turn conversational chat, and complex reasoning tasks. It is highly effective for text summarization, content generation, retrieval-augmented generation (RAG) applications, and code-related assistance including generation and debugging."
+    }
+  ],
+  "it6:limitations": [
+    {
+      "@language": "en",
+      "@value": "The model has a knowledge cutoff of November 2023 and may provide inaccurate information regarding events after this date. As a 7B parameter model, it has a more limited knowledge base compared to larger models (e.g., Mistral Large) and is prone to hallucinations. It lacks a built-in safety moderation layer, meaning it may generate harmful or biased content if prompted. Furthermore, performance is primarily optimized for English, with reduced accuracy in other languages."
+    }
+  ],
+  "ms:anonymized": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownA"
+  },
+  "ms:sensitiveDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "http://w3id.org/meta-share/meta-share/unknownP"
+  },
+  "ms:contextLength": 32768,
+  "ms:lrType": {
+    "@id": "http://w3id.org/meta-share/meta-share/mlModel"
+  },
+  "ms:evaluationDataset": [
+    {
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "MMLU (Massive Multitask Language Understanding)"
+        }
+      ]
+    },
+    {
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "HellaSwag (Commonsense Reasoning)"
+        }
+      ]
+    },
+    {
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "HumanEval (Python Code Generation)"
+        }
+      ]
+    },
+    {
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "GSM8K (Grade School Math)"
+        }
+      ]
+    },
+    {
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "ARC-Challenge (Scientific Reasoning)"
+        }
+      ]
+    }
+  ],
+  "ms:modelType": {
+    "@id": "http://w3id.org/meta-share/meta-share/transformer1"
+  },
+  "ms:modelFunction": [
+    {
+      "@id": "omtd:TextGeneration"
+    },
+    {
+      "@id": "omtd:Summarization"
+    }
+  ],
+  "ms:domain": [
+    {
+      "@id": "http://w3id.org/meta-share/meta-share/ScientificResearchDesignAndEngineering"
+    }
+  ],
+  "it6:trainingMethodologies": [
+    {
+      "@language": "en",
+      "@value": "Pretrained using self-supervised next-token prediction on large-scale publicly available text datasets. Instruction-tuned using supervised fine-tuning on curated instruction-response datasets to improve alignment and task adherence."
+    }
+  ],
+  "it6:trainingProcess": [
+    {
+      "@language": "en",
+      "@value": "Base model pretrained on diverse web and textual corpora using autoregressive language modeling objectives. Subsequently fine-tuned to create the Instruct v0.2 variant, improving response helpfulness, coherence, and compliance with user instructions. Developed and released by Mistral AI as an instruction-tuned variant of the Mistral 7B base model. Version v0.2 represents an updated instruction-tuned release with improved alignment and response quality compared to earlier instruct versions."
+    }
+  ],
+  "it6:bias": [
+    {
+      "@language": "en",
+      "@value": "Primarily trained and instruction-tuned on English data, which may result in stronger performance in English and potential underperformance in low-resource languages. May reflect biases present in publicly available web-scale training corpora, including cultural, social, and demographic biases."
+    }
+  ],
+  "it6:designSpecifications": [
+    {
+      "@language": "en",
+      "@value": "7-billion-parameter transformer-based decoder-only large language model optimized for instruction following. Uses grouped-query attention (GQA) and sliding window attention mechanisms for improved efficiency and long-context handling."
+    }
+  ],
+  "ms:requiresSoftware": [
+    {
+      "@language": "en",
+      "@value": "Requires a compatible inference framework such as Hugging Face Transformers for loading and serving the model."
+    }
+  ],
+   "it6:trainedOn": [
+    { "dct:title": [
+        { "@language": "en", "@value": "Mistral training data" }
+      ]
+    }
+  ],
+  "dcatlds:modelDistribution": [
+    {
+      "@type": "dcatlds:ModelDistribution",
+      "dct:title": [
+        {
+          "@language": "en",
+          "@value": "API Distribution"
+        }
+      ],
+      "dcatlds:accessLevel": [
+        {
+          "@language": "en",
+          "@value": "Black-box access"
+        }
+      ],
+      "dcatlds:distributionMethod": [
+        {
+          "@language": "en",
+          "@value": "Subscription-based REST API"
+        }
+      ],
+      "dcatlds:amountOfActiveParameters": 7000000000,
+      "dcatlds:tokensPerParameter": 4,
+      "ms:accessLocation": {
+        "@type": "xsd:anyURI",
+        "@value": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2"
+      },
+      "ms:size": [
+        {
+          "ms:amount": 13.5,
+          "ms:sizeUnit": {
+            "@id": "http://w3id.org/meta-share/meta-share/gb"
+          }
+        }
+      ],
+      "dcatlds:format": [
+        {
+          "@id": "http://publications.europa.eu/resource/authority/file-type/BIN"
+        }
+      ]
+    }
+  ]
+}
